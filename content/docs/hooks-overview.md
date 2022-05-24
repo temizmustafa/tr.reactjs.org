@@ -128,7 +128,7 @@ function FriendStatus(props) {
 }
 ```
 
-Bu örnekte, bileşen hem unmount anında hem de sonraki render yüzünden effect’i tekrar çalıştırmadan önce, React `ChatAPI`’ımızla bağlantıyı kesiyor. (eğer `ChatAPI`'a verilen `props.firend.id` değişmediyse, React’a tekrar [bağlantı kurmamasını söyleyebilirsiniz.](/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects))
+Bu örnekte, bileşen hem unmount anında hem de sonraki render yüzünden effect’i tekrar çalıştırmadan önce, React `ChatAPI`’ımızla bağlantıyı kesiyor. (eğer `ChatAPI`'a verilen `props.friend.id` değişmediyse, React’a tekrar [bağlantı kurmamasını söyleyebilirsiniz.](/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects))
 
 `useState`’de olduğu gibi tek bir bileşende birden fazla effect kullanabilirsiniz:
 
